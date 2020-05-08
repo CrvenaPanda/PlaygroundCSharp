@@ -28,7 +28,7 @@
 
             while (size > 1)
             {
-                Exchange(array, 1, size);
+                Swap(array, 1, size);
                 Sink(array, 1, --size);
             }
         }
@@ -48,12 +48,12 @@
                     break;
                 }
 
-                Exchange(array, ptr, j);
+                Swap(array, ptr, j);
                 ptr = j;
             }
         }
 
-        private static void Exchange(int[] array, int i, int j)
+        private static void Swap(int[] array, int i, int j)
         {
             --i;
             --j;
